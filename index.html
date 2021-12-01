@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<div style="border-radius: 12px;">
+<html>
+
+<head>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <meta charset="utf-8">
+    <script src="window.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="mdi.css">
+    <link rel="stylesheet" href="material.css">
+    <script defer src="material.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="PangolinWindowToolbar">
+
+        <img id="AppIcon" src="software.png" height="22" width="22">
+        <div align="center" id="drag"> <t id="AppTitle">string.title</t></div>
+       
+        <div id="WindowControls">
+            <button id="min-btn" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                <i id="min" class="material-icons minimize control ">minimize</i>
+            </button>
+
+            <button id="max-btn" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                <i id="maxIcon" class="dahlia-icons control ">&#xE800</i>
+                <!--On maximize, use the icon &#xE801-->
+            </button>
+
+            <button id="close-btn" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+                <i id="close" class="material-icons control ">close</i>
+            </button>
+
+        </div>
+
+    </div>
+    <div id="preload"><img id="bodyIcon" src="software.png" width="64" height="64">
+        <div id="spinner"  class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+    </div>
+
+
+
+    <webview id="WebView" style="position:absolute; z-index:4;  height: calc(100vh - 40px); width: 100vw; margin-top: 40px;"></webview>
+   
+    <script src="renderer.js"></script>
+  
+</body>
+
+</html></div>

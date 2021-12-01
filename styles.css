@@ -1,0 +1,130 @@
+/* styles.css */
+
+@font-face {
+    font-family: ToolbarIcons;
+    src: url(CustomIcons.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+html{
+    width: 100%;
+    height: 100%;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    border-radius: 12px;
+}
+
+body {
+    background-color: #36393e;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 12px;
+}
+
+#PangolinWindowToolbar {
+   user-select: none;
+    background-color: #FF3d00;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: absolute;
+   z-index: 5;
+margin-bottom: 40;
+
+}
+#drag{
+    -webkit-app-region: drag;
+    width: calc(100% - 125px);
+    position: absolute;
+}
+#AppIcon {
+    margin-left: 9px;
+}
+
+#AppTitle {
+    font-family: Roboto;
+    font-size: 15px;
+    color: white;
+    
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin:10px auto;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    display: inline-flex
+}
+#preload{
+   
+    height: 100vh;
+    width: 100vw;
+   
+    z-index: 1;
+    display:flex;
+    position: absolute;
+    justify-content:center;
+    align-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#spinner{
+    margin-top: 10px;
+    height: 20px;
+width: 20px;}
+.mdl-spinner--single-color .mdl-spinner__layer-1 {
+    border-color: #ff3d00
+}
+.mdl-spinner--single-color .mdl-spinner__layer-2 {
+    border-color: #ff3d00
+}
+.mdl-spinner--single-color .mdl-spinner__layer-3 {
+    border-color: #ff3d00
+}
+.mdl-spinner--single-color .mdl-spinner__layer-4 {
+    border-color: #ff3d00
+}
+/*
+#WebView{
+    z-index: 2;
+    display: block;
+}*/
+.dahlia-icons {
+    font-family: ToolbarIcons;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.minimize {
+    margin-top: -2px;
+}
+
+.control {
+    font-size: 22px;
+    color: white;
+}
+
+#WindowControls {
+    width: 124px;
+    display: flex;
+    justify-content: space-evenly;
+    --webkit-app-region: no-drag;
+    z-index: 10;
+}
