@@ -2,5 +2,9 @@
 npm install @electron/remote --save-dev&&npm install electron-packager --save-dev
 ./node_modules/electron-packager/bin/electron-packager.js . --overwrite --platform=linux --arch=x64 --icon=software.png --prune=true --out=release-builds
 mkdir appimage
-cp release-builds/web_runtime-linux-x64/ appimage/
-cp dahliaOS/ appimage/
+cp -r release-builds/web_runtime-linux-x64/* appimage/
+cp -r dahliaOS/* appimage/
+cp -r node_modules/@electron/* appimage/resources/app/node_modules/@electron/
+chmod +x appimage/web_runtime
+ARCH=x86_64 appimagetool appimage/
+mv Web_Runtime-x86_64.AppImage io.dahliaos.web_runtime.dap
