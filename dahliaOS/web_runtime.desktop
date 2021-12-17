@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=System Recovery
-Exec=system_recovery
+Name=Web Runtime
+Exec=web_runtime
 Terminal=false
-Icon=system_recovery
+Icon=web_runtime
 Type=Application
 Categories=Utility;
