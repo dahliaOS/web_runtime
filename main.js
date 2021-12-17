@@ -62,6 +62,14 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
+app.on('browser-window-blur', (event, win) => {
+  if (win.webContents.isDevToolsFocused()) {
+    console.log('Ignore this case')
+  } else {
+    console.log('browser-window-blur', win.webContents.id);
+    win.close();
+  }
+})
 app.whenReady().then(() => {
   
   createWindow()

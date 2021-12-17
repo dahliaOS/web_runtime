@@ -12,7 +12,8 @@ const { BrowserWindow } = require('@electron/remote')
 
   document.getElementById("min-btn").addEventListener("click", function (e) {
        var window = BrowserWindow.getAllWindows()[0];
-       window.minimize(); 
+       //window.minimize(); 
+       console.log("The web runtime can't be minimized in this implementation.");
   });
 
   document.getElementById("max-btn").addEventListener("click", function (e) {
