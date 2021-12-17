@@ -1,21 +1,21 @@
 {
-  "name": "electron-quick-start",
+  "name": "web_runtime",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Run web apps on dahliaOS",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/dahliaOS/web_runtime",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "dahliaOS",
+    "linux",
+    "browser",
+    "web",
+    "javascript"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "dahliaOS",
+  "license": "apache2",
   "devDependencies": {
     "@electron/remote": "^2.0.1",
     "electron": "^16.0.0",
