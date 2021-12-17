@@ -1,0 +1,10 @@
+{
+      "id": "io.dahliaos.web_runtime",
+      "altName": "web_runtime",
+      "realName": "Web Runtime",
+      "version": "dahliaOS-latest",
+      "description": "Temporary solution for running web apps on dahliaOS",
+      "sourceCode": "https://github.com/dahliaOS/web_runtime",
+      "hash": "DAP_AUTOMATION_PKGHASH",
+      "architecture": "x86_64"
+},
