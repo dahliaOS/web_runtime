@@ -67,7 +67,6 @@ app.on('browser-window-blur', (event, win) => {
     console.log('Ignore this case')
   } else {
     console.log('browser-window-blur', win.webContents.id);
-    win.close();
   }
 })
 app.whenReady().then(() => {
